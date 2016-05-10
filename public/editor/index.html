@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Editor</title>
+        <link rel="stylesheet" href="css/simplemde.min.css">
+        <script src="js/simplemde.min.js"></script>
+        <script src="js/jq.js"></script>
+        <script src="js/ko.js"></script>
+    </head>
+
+    <body>
+        <div id="info">
+            <input type="text" placeholder="parent" data-bind="value: parent">
+            <input type="text" placeholder="name" data-bind="value: name">
+        </div>
+        <textarea></textarea>
+        <button data-bind="click: save">Save</button>
+    </body>
+
+    <script src="index.js"></script>
+
+</html>
