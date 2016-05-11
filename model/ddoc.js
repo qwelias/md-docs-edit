@@ -1,6 +1,7 @@
 "use strict";
 
 const mongoose = require( "mongoose" );
+const mkdRebuild = require( "../lib/mkdoc" );
 const createdModifiedPlugin = require( 'mongoose-createdmodified' ).createdModifiedPlugin;
 
 mongoose.Promise = global.Promise;
@@ -50,6 +51,8 @@ docSchema.virtual( 'fileName' ).get( function () {
 docSchema.plugin( createdModifiedPlugin, {
 	index: true
 } );
+
+docSchema.post('save', mkdRebuild);
 
 const Doc = mongoose.model( 'ddoc', docSchema );
 

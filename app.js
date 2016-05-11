@@ -46,4 +46,4 @@ http.listen( config.PORT, () => {
 	Log( 'listening on ', config.PORT );
 } );
 
-require('./lib/mkdoc')
+require('./lib/mkdoc')();

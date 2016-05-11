@@ -8,7 +8,7 @@
         save: function(){
             console.log(data)
             var data = {
-                parent: _vm.parent(),
+                group: _vm.parent(),
                 name: _vm.name(),
                 body: smde.value()
             };

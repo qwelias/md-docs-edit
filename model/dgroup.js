@@ -1,6 +1,7 @@
 "use strict";
 
 const mongoose = require( "mongoose" );
+const mkdRebuild = require( "../lib/mkdoc" );
 const createdModifiedPlugin = require( 'mongoose-createdmodified' ).createdModifiedPlugin;
 
 mongoose.Promise = global.Promise;
@@ -20,6 +21,8 @@ const groupSchema = new mongoose.Schema( {
 } );
 
 groupSchema.plugin(createdModifiedPlugin, {index: true});
+
+groupSchema.post('save', mkdRebuild);
 
 const Group = mongoose.model('dgroup', groupSchema);
 
