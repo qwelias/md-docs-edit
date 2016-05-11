@@ -32,7 +32,8 @@ module.exports = Object.freeze({
         def: {
             site_name: 'Test',
             theme: 'readthedocs',
-            site_dir: '../docs'
+            site_dir: '../docs',
+            docs_dir: './docs'
         },
         path: './public/mkdsrc'
     }
