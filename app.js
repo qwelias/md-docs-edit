@@ -1,3 +1,9 @@
+
+/**
+ * @overview Main script that connects to a data base, initiates Express instance, sets it up, listens to a port and makes initial mkdoc rebuild by {@link module:lib/mkdoc}.
+ * @module app
+ */
+
 "use strict";
 
 const express = require( 'express' );

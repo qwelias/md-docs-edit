@@ -1,0 +1,27 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": ["./", "./package.json", "./README.MD"],
+        "exclude": ["node_modules", ".git", "public"],
+        "includePattern": ".+\\.js$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [
+        "plugins/commentConvert"
+    ],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "default": {
+            "outputSourceFiles": true
+        }
+    },
+    "opts": {
+        "template": "templates/default",
+        "destination": "./public/jsdocs",
+        "recurse": true,
+        "verbose": true
+    }
+}
