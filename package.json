@@ -29,6 +29,7 @@
     "mkdirp": "0.5.1",
     "mongoose": "4.4.14",
     "mongoose-createdmodified": "0.0.2",
+    "ncp": "2.0.0",
     "rimraf": "2.5.2",
     "yamljs": "0.2.7"
   }

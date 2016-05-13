@@ -36,4 +36,5 @@ node_modules
 
 /public/jsdocs/
 
-/public/mkdsrc/*
+/public/mkdsrc/docs/*.md
+/public/mkdsrc/mkdocs.yml
